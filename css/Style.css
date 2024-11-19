@@ -1,0 +1,192 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcfee1;
+    color: #333;
+}
+
+header {
+    background-color: #730ea5;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #ff4b40;
+}
+
+/* Estilos para la línea de tiempo */
+#timeline {
+    padding: 50px;
+    background-color: #dcfee1;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.year {
+    background-color: #dcfee1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.year img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Estilos para formularios */
+form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #730ea5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form h3 {
+    font-size: 1.5rem;
+    color: #730ea5;
+    margin-bottom: 20px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la galería */
+#gallery {
+    padding: 50px;
+    background-color: #dcfee1;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lecciones Aprendidas */
+#lessons {
+    background-color: #dcfee1;
+    padding: 50px;
+}
+
+#lessons ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lessons li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #bb5de9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.show-names-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.show-names-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la lista de nombres */
+.names-list {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 250px;
+}
+
+.names-list h3 {
+    text-align: center;
+}
+
+.names-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.names-list li {
+    padding: 5px 0;
+    text-align: center;
+}
