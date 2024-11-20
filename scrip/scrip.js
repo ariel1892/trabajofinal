@@ -1,8 +1,8 @@
 window.onload = function () {
-  // Paso 1: Pedir el nombre al cargar la página
+
   const name = prompt("¡Hola! ¿Cuál es tu nombre?");
 
-  // Verificar si el nombre es válido
+  
   if (name && name.trim() !== "") {
     // Enviar el nombre al servidor para guardarlo
     fetch('Datos.php', {
@@ -14,25 +14,25 @@ window.onload = function () {
     })
       .then(response => response.text())
       .then(data => {
-        // Mostrar una alerta de agradecimiento
+       
         alert('¡Gracias, ' + name + '! Tu nombre ha sido guardado.');
       })
       .catch(error => {
         console.error('Error al guardar el nombre:', error);
       });
   } else {
-    // Si no se ingresa un nombre válido, mostrar un mensaje de alerta
+   
     alert("Por favor, ingresa un nombre válido.");
   }
 
-  // Paso 2: Cargar los nombres desde el servidor al cargar la página
-  fetch('get_names.php') // Hacer una solicitud al archivo PHP que devuelve los nombres
+  
+  fetch('get_names.php') 
     .then(response => response.json())
     .then(data => {
       const namesUl = document.getElementById('names-ul');
-      namesUl.innerHTML = ''; // Limpiar la lista antes de agregar los nuevos nombres
+      namesUl.innerHTML = ''; 
 
-      // Si no hay nombres, mostrar un mensaje
+     
       if (data.names.length === 0) {
         namesUl.innerHTML = '<li>No hay nombres registrados aún.</li>';
       } else {
